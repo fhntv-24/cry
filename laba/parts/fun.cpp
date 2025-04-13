@@ -1,6 +1,6 @@
 #include "class.h"
 using namespace std;
-using namespace nm;
+namespace nm {
 istream& operator>>(istream& in, magaz& p) {
 	in >> p._t >> p._p >> p._cen;
 	return in;
@@ -92,7 +92,7 @@ void ud() {
 		delete[] temp;
 	}
 	else {
-		cout << "íåò òàêîé ñòðîêè!" << endl;
+		cout << "Ã­Ã¥Ã² Ã²Ã ÃªÃ®Ã© Ã±Ã²Ã°Ã®ÃªÃ¨!" << endl;
 		return;
 	}
 }
@@ -202,4 +202,5 @@ void iz() {
 	}
 	out.close();
 	delete[] ar;
+}
 }
